@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forget Password</title>
+	<style>
+
+    body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	}
+
+    .header {
+        background-color: #3cb043;
+        color: #ffffff;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+	.logo {
+    margin-right: auto; /* keep logo on the right */
+    }
+
+    .logo img {
+    width: 100px;
+    }
+
+	h1 {
+		font-size: 32px;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-top: 50px;
+	}
+
+	input[type="password"] {
+		width: 300px;
+		height: 40px;
+		padding: 10px;
+		border-radius: 20px;
+		border: none;
+		margin-bottom: 20px;
+		font-size: 16px;
+		background-color: #f5f5f5;
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	input[type="submit"] {
+		background-color: #000000;
+		color: #ffffff;
+		border: none;
+		border-radius: 20px;
+		padding: 10px 20px;
+		font-size: 16px;
+		cursor: pointer;
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+
+	input[type="submit"]:hover {
+		background-color: #ffffff;
+		color: #000000;
+	}
+
+	.login-options {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 20px;
+		font-size: 16px;
+	}
+	.login-options a {
+		color: #000000;
+		text-decoration: underline;
+	}
+
+</style>
+<body>
+	<div class="header">
+		<div class="logo">
+			<a href="Welcome.html"><img src="logo.png" alt="Boon Logo"></a>
+		</div>
+	</div>
+    <h1>Password Reset</h1>
+
+<form action="">
+	<input type="password" name="newPassword" placeholder="New Password" required>
+	<input type="password" name="confirmPassword" placeholder="Confirm New Password" required>
+	<input type="submit" value="Reset Password">
+</form>
+
+</body>
+</html>

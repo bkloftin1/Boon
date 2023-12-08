@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f5f5f5;
+		}
+
+		.header {
+ 		background-color: #3cb043;
+  		color: #ffffff;
+  		padding: 10px 20px;
+ 		display: flex;
+		align-items: center;
+  		justify-content: space-between;
+		}
+
+		.logo {
+  		margin-right: auto; /* keep logo on the right */
+		}
+
+		.logo img {
+			width: 100px;
+		}
+    
+		.login-form {
+			background-color: #ffffff;
+			border-radius: 10px;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+			padding: 40px;
+			max-width: 500px;
+			margin: 0 auto;
+			margin-top: 50px;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+
+		input[type="text"],
+		input[type="password"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			margin-bottom: 20px;
+			font-size: 16px;
+		}
+
+		button {
+			background-color: #000000;
+			color: #ffffff;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			font-size: 16px;
+			cursor: pointer;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		button:hover {
+			background-color: #ffffff;
+			color: #3cb043;
+		}
+
+		.login-options {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 20px;
+			font-size: 16px;
+		}
+
+		.login-options a {
+			color: #000000;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="logo.png" alt="Boon Logo"></a>
+		</div>
+	</div>
+
+<div class="login-form">
+	<form method="post" action="login_action.php">
+		<h1>Login</h1>
+
+		<input type="text" name="username" placeholder="Username">
+		<input type="password" name="password" placeholder="Password">
+		<Button type="submit" name="customer_submit" value="Customer Login" class="login-btn">Customer Login</button>
+		<Button type="submit" name="business_submit" value="Business Login" class="login-btn">Business Login</button>
+	</form>
+		<div class="login-options">
+      <a href="forgetpwd.html">Forgot password?</a>
+			<a href="Registration.html">Create an account</a>
+		</div>
+</div>
+</body>
+</html>

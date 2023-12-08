@@ -1,0 +1,212 @@
+<html lang="en">
+	<head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+    
+      
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+	  
+	<style>
+        .home_div{
+			margin: auto;
+			
+		}
+		.new_session{
+			padding: 5%;
+			margin-top: 3%;
+			
+		}
+		.session_details{
+			padding: 5%;
+			margin-top:3%;
+			border-left: thick;
+			border-color: black;
+		}
+
+		.header {
+  background-color: #3cb043;
+  color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropbtn {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.dropbtn:hover {
+  background-color: #f5f5f5;
+  color: #000000;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0000;
+  min-width: 200px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  font-family: helvetica;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+}
+
+hr.solid {
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #000000;
+  border-bottom: none;
+  padding-bottom: 5px; /*Affecting dropdown*/
+}
+
+.show {
+  display: block;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.logo {
+  margin-right: auto; /* keep logo on the right */
+}
+
+.logo img {
+  width: 100px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+}
+
+.button a {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.button a:hover {
+  background-color: #f5f5f5;
+  color: #000000;
+}
+
+.profile-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+    </style>
+    
+    </head>
+    <body>
+  
+	<div class="header">
+		<div class="logo">
+			<a href="testhome.html"><img src="logo.png" alt="Boon Logo"></a>
+		</div>
+		<div class="button">
+			<a href="ongoing1.html">On going</a>
+		<script src="dropdown.js"></script>
+        <div class="profile-icon">
+          <button onclick="myFunction()" class="dropbtn">Account</button>
+          <div id="myDropdown" class="dropdown-content">
+            <hr class="profile">
+            <a href="Profile.html">Profile</a>
+            <hr class="solid">
+            <a href="#">Log out</a>
+          </div>
+				
+			</div>
+		</div>
+	</div>
+
+  
+  <div class="main-content">
+  	<div class="home_div row" >
+  		<div class="col s1 m1"></div>
+		<div class="session_details col s12 m10">
+	 	<div class="row">
+		 	<h4 class="col s12 m12">FAQs</h4>
+			 <ul class="col s12 m12 collapsible popout" data-collapsible="accordion">
+				<li>
+				  <div class="collapsible-header"><i class="material-icons">picture_in_picture</i>Q1</div>
+				  <div class="collapsible-body">
+				  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				   </div>
+				</li>
+				<li>
+				  <div class="collapsible-header"><i class="material-icons">picture_in_picture</i>Q2</div>
+				  <div class="collapsible-body">
+				  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae magnam harum natus fuga et repellat in maiores.</p>
+				   </div>
+				</li>
+				<li>
+				  <div class="collapsible-header"><i class="material-icons">picture_in_picture</i>Q3</div>
+				  <div class="collapsible-body">
+				  <p>Phasellus ultrices lorem vel bibendum ultricies. In hendrerit nulla a ante dapibus pulvinar eu eget quam.</p>
+				   </div>
+				</li>
+				<li>
+				  <div class="collapsible-header"><i class="material-icons">picture_in_picture</i>Q4</div>
+				  <div class="collapsible-body">
+				  <p>Aenean posuere mauris quam, pellentesque auctor mi bibendum nec. Sed scelerisque lacus nisi, quis auctor lorem ornare vel.</li></ul>
+					</p>
+				   </div>
+				</li>
+			  </ul>
+		</div>
+		
+		</div>
+				
+  	</div>
+  </div>
+	
+    	
+    
+    <script>
+		$(document).ready(function(){
+
+			$(".button-collapse").sideNav();
+			$('select').material_select();
+		});	
+	</script>	
+    	
+    </body>
+    
+</html>
